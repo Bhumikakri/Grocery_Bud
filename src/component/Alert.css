@@ -1,0 +1,29 @@
+.alert {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 48%;
+    transform: translateX(-40%);
+    padding: 20px 30px;
+    background-color: #fde69b;
+    color: rgb(34, 34, 34);
+    border-radius: 7px;
+    font-size: 1.1rem;
+    animation: slideDown 0.5s ease-in-out;
+  }
+  
+  .alert.show {
+    display: block;
+  }
+  
+  @keyframes slideDown {
+    from {
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      top: 20px;
+      opacity: 1;
+    }
+  }
+  
